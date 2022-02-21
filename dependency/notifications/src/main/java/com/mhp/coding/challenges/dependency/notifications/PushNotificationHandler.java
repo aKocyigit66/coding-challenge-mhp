@@ -1,13 +1,11 @@
 package com.mhp.coding.challenges.dependency.notifications;
 
 import com.mhp.coding.challenges.dependency.inquiry.Inquiry;
-import com.mhp.coding.challenges.dependency.inquiry.InquiryService;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.stereotype.Component;
 

@@ -1,12 +1,8 @@
 package com.mhp.coding.challenges.mapping.models.db.blocks;
 
-import com.mhp.coding.challenges.mapping.models.db.Image;
-import com.mhp.coding.challenges.mapping.models.dto.ImageDto;
 import com.mhp.coding.challenges.mapping.models.dto.blocks.ArticleBlockDto;
-import com.mhp.coding.challenges.mapping.models.dto.blocks.GalleryBlockDto;
 import com.mhp.coding.challenges.mapping.models.dto.blocks.TextBlockDto;
 
-import java.util.ArrayList;
 
 public class TextBlock extends ArticleBlock {
 

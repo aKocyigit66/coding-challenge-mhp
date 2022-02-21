@@ -2,7 +2,7 @@ package com.mhp.coding.challenges.mapping.models.db.blocks;
 
 import com.mhp.coding.challenges.mapping.models.dto.blocks.ArticleBlockDto;
 
-public abstract class ArticleBlock {
+public class ArticleBlock implements ArticleBlockInterface{
 
     private int sortIndex;
 
@@ -15,5 +15,10 @@ public abstract class ArticleBlock {
     }
 
 
-    public abstract ArticleBlockDto map();
+    @Override
+    public ArticleBlockDto map() {
+        ArticleBlockDto articleBlockDto = new ArticleBlockDto();
+        articleBlockDto.setSortIndex(this.getSortIndex());
+        return articleBlockDto;
+    }
 }
